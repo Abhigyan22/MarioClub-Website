@@ -1,0 +1,282 @@
+
+header{
+    width: 100%;
+    background-color: rgb(248, 48, 21);
+    position: sticky;
+    top: 0;
+    padding : 0.2px;
+    text-align: center;
+    font-size: 22px;
+    /* z-index: 1; */
+}
+header h1{
+    color: white;
+    border: 3px solid white;
+    display: inline-block;
+    padding: 1% 2%;
+    border-radius: 36px;
+}
+.banner{
+    position: relative;
+    margin: 0;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    background-color:rgb(250, 205, 0);
+    color: white;
+    padding: 2.4%;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+.banner h2{
+    font-size: 55px;
+}
+.banner h2 span{
+    font-size: 1.2em;
+
+}
+nav {
+    background-color: #f4f4f4;
+    padding: 1%;
+    /* z-index: 2; */
+    position: sticky;
+
+    top: 142px;
+
+
+    /* bottom: 1mm; */
+    text-align: center;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 30px;
+
+    /* text-align: center; */
+    /* z-index: 1; */
+}
+nav ul {
+    /* white-space: nowrap; */
+    /* max-width: 1300px; */
+    /* margin: 0 auto; */
+    position: relative;
+    right: 1.4%;
+}
+nav li a {
+    text-decoration: none;
+    color: rgb(255, 72, 0);
+}
+.images img{
+    max-width: 100%;
+
+}
+.images {
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+    /* background-color: #f4f4f4; */
+}
+.images li {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+    /* background-color: #f4f4f4; */
+}
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2 {
+    font-size: 42px;
+}
+article p {
+    line-height: 2em;
+    color: #4b4b4b;
+}
+.join {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+}
+.join h2 {
+    font-size: 32px;
+}
+.join p {
+    color: #4b4b4b;
+}
+p {
+    font-size: 20px;
+}
+input {
+    font-size: 1.8vw;
+    margin: 20px 0;
+    padding : 10px 20px;
+    border-radius: 38px;
+    width: 60%;
+    border: 4px solid white;
+}
+footer {
+    background: rgb(248, 48, 21);
+    padding: 5px;
+    text-align: center;
+}
+nav li a:hover {
+    text-decoration: underline;
+}
+.images li:hover {
+    position: relative;
+    bottom: 4px;
+}
+input:focus {
+    border-color: black;
+    outline: none;
+}
+*::selection{
+    background-color: rgb(248, 48, 21);
+    color: white;
+}
+@media screen and (max-width:1000px) {
+    .banner .welcome h2{
+        font-size: 50px;
+    }
+
+    header{
+        font-size: 18px;
+
+    }
+    nav li{
+        font-size: 25px;
+    }
+    article h2 {
+        font-size: 36px;
+    }
+    nav {
+        top: 110px;
+}
+
+@media screen and (max-width:800px) {
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+
+    header{
+        font-size: 16px;
+
+    }
+    nav li{
+        font-size: 22px;
+    }
+    article h2 {
+        font-size: 32px;
+    }
+    nav {
+        top: 100px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .join h2{
+        font-size: 29px;
+    }
+}
+@media screen and (max-width:900px) {
+    .images {
+        white-space: normal;
+    }
+    .images li {
+        width: 95%;
+        display: block;
+    }
+    .images {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .banner .welcome h2{
+        font-size: 30px;
+    }
+
+    header{
+        font-size: 12px;
+
+    }
+    nav li{
+        font-size: 19px;
+    }
+    article h2 {
+        font-size: 27px;
+    }
+    nav {
+        top: 75px;
+    }
+    p {
+        font-size: 15spx;
+    }
+    .join h2{
+        font-size: 25px;
+    }
+    .images {
+        margin-bottom: 0px;
+    }
+    .join {
+        padding: 80px 20px;
+    }
+}
+@media screen and (max-width:640px) {
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+
+    header{
+        font-size: 12px;
+
+    }
+    nav li{
+        font-size: 19px;
+        display: block;
+        margin: 10px 0px;
+        width : 100%;
+
+    }
+    article h2 {
+        font-size: 27px;
+    }
+    nav {
+        top: 75px;
+        text-align: left;
+    }
+    p {
+        font-size: 13spx;
+    }
+    .join h2{
+        font-size: 25px;
+    }
+    .images {
+        margin-bottom: 0px;
+    }
+    .join {
+        padding: 80px 20px;
+    }
+}
+@media screen and (max-width:410px) {
+    .banner .welcome h2{
+        font-size: 18px;
+    }
+    nav {
+        top: 70px;
+        text-align: left;
+    }
+    p {
+        font-size: 11spx;
+    }
+    .join h2{
+        font-size: 24px;
+    }
+}}
